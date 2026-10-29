@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luna Beauty — քո ամենօրյա գեղեցկության փոքրիկ աշխարհը։ Դիմահարդարման և խնամքի միջոցներ։">
+  <title>Luna Beauty | Գեղեցկություն՝ քո ձևով</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Փոքրիկ ուրախություններ՝ ամեն պատվերի մեջ ♡</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Luna Beauty գլխավոր էջ">
+      <span class="brand-mark">✿</span>
+      <span>LUNA <em>BEAUTY</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Գլխավոր նավիգացիա">
+      <a href="#shop">Խանութ</a>
+      <a href="#about">Մեր մասին</a>
+      <a href="#newsletter">Նորություններ</a>
+    </nav>
+    <button class="cart-button" id="open-cart" aria-label="Բացել զամբյուղը">
+      <span>Զամբյուղ</span><span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ՔՈ ԳԵՂԵՑԿՈՒԹՅՈՒՆԸ՝ ՔՈ ԿԱՆՈՆՆԵՐՈՎ</p>
+        <h1>Մի փոքր գույն,<br><em>շատ ինքնավստահություն։</em></h1>
+        <p class="hero-description">Գտիր այն փոքրիկ գեղեցկության միջոցները, որոնք քո առօրյան դարձնում են ավելի լուսավոր։</p>
+        <a class="primary-button" href="#shop">Բացահայտել ապրանքները <span>↗</span></a>
+        <div class="hero-note"><span class="sparkle">✧</span><span>Ընտրված սիրով, քեզ համար</span></div>
+      </div>
+      <div class="hero-art" aria-label="Կոսմետիկայի դեկորատիվ նկարազարդում">
+        <div class="hero-circle"></div>
+        <div class="hero-label label-one">a little<br>lovely ♡</div>
+        <div class="hero-label label-two">YOUR DAILY<br>BEAUTY RITUAL</div>
+        <div class="product-illustration">
+          <div class="tube tube-left"><div class="tube-cap"></div><span>LUNA</span><small>BLUSH</small></div>
+          <div class="lipstick"><div class="lipstick-color"></div><div class="lipstick-body"><span>LUNA</span></div><div class="lipstick-base"></div></div>
+          <div class="jar"><div class="jar-lid"></div><div class="jar-body"><span>LUNA</span><small>GLOW BALM</small></div></div>
+          <div class="mascara"><div class="mascara-cap"></div><div class="mascara-body"><span>LASH<br>LOVE</span></div></div>
+        </div>
+        <div class="hero-flower flower-a">✿</div><div class="hero-flower flower-b">✧</div><div class="hero-flower flower-c">♡</div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Մեր առավելությունները">
+      <div><span>♡</span><p>Սիրված գեղեցկության միջոցներ</p></div>
+      <div><span>✧</span><p>Քեզ համար ընտրված</p></div>
+      <div><span>☼</span><p>Գեղեցկություն ամեն օր</p></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">ՔՈ ՆՈՐ ՍԻՐԵԼԻՆԵՐԸ</p><h2>Գեղեցկության <em>փոքրիկ գանձեր</em></h2></div>
+        <p class="section-subtitle">Ընտրիր այն, ինչ քեզ ժպիտ է պարգևում։</p>
+      </div>
+      <div class="shop-controls">
+        <div class="filters" id="filters" aria-label="Ապրանքների կատեգորիաներ">
+          <button class="filter active" data-category="all">Բոլորը</button>
+          <button class="filter" data-category="eyes">Աչքեր</button>
+          <button class="filter" data-category="lips">Շրթունքներ</button>
+          <button class="filter" data-category="face">Դեմք</button>
+          <button class="filter" data-category="care">Խնամք</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Փնտրել ապրանք..." aria-label="Փնտրել ապրանք"></label>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>Այս որոնմամբ ապրանք չգտնվեց։ Փորձիր այլ բառ։</p>
+    </section>
+
+    <section class="quote-banner" id="about">
+      <span class="quote-flower">✿</span>
+      <p class="eyebrow">LUNA BEAUTY ՄՈՏԵՑՈՒՄԸ</p>
+      <h2>Գեղեցկությունը մի բան չէ,<br><em>որ պետք է ապացուցել։ Այն քոնն է։</em></h2>
+      <p>Մենք հավատում ենք փոքրիկ ծեսերին, սիրելի երանգներին և այն զգացողությանը, երբ քեզ պարզապես լավ ես զգում քո մաշկի մեջ։</p>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div><p class="eyebrow">ՆՈՐՈՒԹՅՈՒՆՆԵՐԻ ՄԵՋ</p><h2>Միացիր մեր <em>գեղեցիկ համայնքին</em></h2><p>Թող նոր ապրանքներն ու փոքրիկ անակնկալները առաջինը քեզ հասնեն։</p></div>
+      <form id="newsletter-form" class="newsletter-form"><label class="sr-only" for="email">Էլեկտրոնային փոստ</label><input id="email" type="email" placeholder="Քո էլ. փոստը" required><button type="submit">Միանալ ↗</button></form>
+      <p class="newsletter-message" id="newsletter-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">✿</span><span>LUNA <em>BEAUTY</em></span></a>
+    <p>Գեղեցկություն՝ քո ձևով։ ♡</p>
+    <span>© <span id="year"></span> Luna Beauty. Բոլոր իրավունքները պաշտպանված են։</span>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-modal="true" role="dialog" hidden>
+    <div class="drawer-header"><div><p class="eyebrow">ՔՈ ԸՆՏՐԱՆՔԸ</p><h2 id="cart-title">Իմ զամբյուղը</h2></div><button class="icon-button" id="close-cart" aria-label="Փակել զամբյուղը">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>♡</span><h3>Զամբյուղդ դեռ դատարկ է</h3><p>Ավելացրու մի փոքրիկ գեղեցկություն։</p></div>
+    <div class="cart-footer"><div class="cart-total"><span>Ընդհանուր</span><strong id="cart-total">0 ֏</strong></div><button class="primary-button checkout-button" id="checkout-button">Պատվիրել WhatsApp-ով ↗</button><p class="checkout-note">Պատվերը վերջնականացնելու համար կբացվի WhatsApp-ը։</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
